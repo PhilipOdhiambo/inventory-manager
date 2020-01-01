@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bincard</title>
+    <link rel="stylesheet" href="vue.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <div class="nav-bar">
+  </div>
+
+  <div class="bincard">
+    <a :href="url">Resource</a>
+    <div class="product">
+      <div class="product-image">
+        <img v-bind:src="picha" alt="">
+      </div>
+      <div class="product-info">
+        <h1>Product code: {{xx}}</h1>
+        <h2>Description: {{dd}}</h2>
+      </div>
+    </div>
+    </div>
+
+  <body>
+
+    <script type="text/javascript">
+      var app = new Vue({
+        el: '.bincard',
+        data: {
+          xx: 'SF',
+          dd: 'Amikacin 500mg inj.',
+          picha: 'vue.jpg',
+          url: 'vueone.html'
+        }
+      });
+
+    </script>
+    </body>
+</html>
